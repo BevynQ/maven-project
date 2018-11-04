@@ -1,4 +1,4 @@
 /**
- * example maven project for jenkins tutorial
+ * example maven project for jenkins tutorial.
  */
 package com.example;
