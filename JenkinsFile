@@ -11,14 +11,14 @@ pipeline {
             post {
                 success {
                     echo 'Now Archiving...'
-                    archiveArtifacts: '**/target/*.war'
+                    archiveArtifacts '**/target/*.war'
                 }
             }
 
         }
         satge ('Deploy to Staging'){
             steps {
-                build job: 'Deply-to-staging'
+                build 'Deploy-to-staging'
             }
         }
     }
