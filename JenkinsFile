@@ -16,7 +16,7 @@ pipeline {
             }
 
         }
-        satge ('Deploy to Staging'){
+        stage ('Deploy to Staging'){
             steps {
                 build 'Deploy-to-staging'
             }
