@@ -8,18 +8,7 @@ pipeline {
                 echo 'building'
                 bat 'mvn clean package'
             }
-            post {
-                success {
-                    echo 'Now Archiving...'
-                    archiveArtifacts '**/target/*.war'
-                }
-            }
 
-        }
-        stage ('Deploy to Staging'){
-            steps {
-                build 'Deploy-to-staging'
-            }
         }
     }
 }
